@@ -4,6 +4,8 @@ import 'package:http/http.dart' as http;
 import 'package:airtel_test/airtel_test.dart';
 
 class AirtelCBController extends ResourceController{
+
+  @Operation.post()
   Future<Response> cb(@Bind.body(require: ['customerNo', 'merchantNo', 'amount', 'pin']) AirtellCBSerializer airtellCBSerializer)async{
     final http.Response _res =  await airtelCTobTransaction(
       customerNo: airtellCBSerializer.customerNo,

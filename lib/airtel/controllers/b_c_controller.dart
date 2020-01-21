@@ -4,6 +4,8 @@ import 'package:http/http.dart' as http;
 import 'package:airtel_test/airtel_test.dart';
 
 class AirtelBCController extends ResourceController{
+
+  @Operation.post()
   Future<Response> bc(@Bind.body(require: ['customerNo', 'merchantNo', 'amount', 'pin']) AirtellBCSerializer airtellBCSerializer)async{
     final http.Response _res =  await airtelBTocTransaction(
       customerNo: airtellBCSerializer.customerNo,
