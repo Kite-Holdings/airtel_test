@@ -1,3 +1,5 @@
+import 'package:airtel_test/airtel/routes/airtel_routes.dart';
+
 import 'airtel_test.dart';
 
 /// This type initializes an application.
@@ -33,6 +35,9 @@ class AirtelTestChannel extends ApplicationChannel {
       .linkFunction((request) async {
         return Response.ok({"key": "value"});
       });
+
+    // airtel
+    airtelRouters(router);
 
     return router;
   }
