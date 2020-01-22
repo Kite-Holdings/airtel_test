@@ -8,14 +8,14 @@ Future<http.Response> airtelBTocTransaction({
   double amount,
   String pin,
 }) async {
-  const String payload = 
+  final String payload = 
   '''
   <COMMAND>
   <TYPE>B2C</TYPE>
-  <CUSTOMERMSISDN>701555550</CUSTOMERMSISDN>
-  <MERCHANTMSISDN>548355</MERCHANTMSISDN>
-  <AMOUNT>10</AMOUNT>
-  <PIN>0000</PIN>
+  <CUSTOMERMSISDN>$customerNo</CUSTOMERMSISDN>
+  <MERCHANTMSISDN>$merchantNo</MERCHANTMSISDN>
+  <AMOUNT>$amount</AMOUNT>
+  <PIN>$pin</PIN>
   <REFERENCE>test001</REFERENCE>
   <USERNAME>test</USERNAME>
   <PASSWORD>test@123</PASSWORD>
