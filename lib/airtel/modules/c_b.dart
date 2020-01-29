@@ -16,8 +16,8 @@ Future<http.Response> airtelCTobTransaction({
   <AMOUNT>$amount</AMOUNT>
   <PIN>$pin</PIN>
   <REFERENCE>test002</REFERENCE>
-  <USERNAME>test</USERNAME>
-  <PASSWORD>test@123</PASSWORD>
+  <USERNAME>KITEC2B</USERNAME>
+  <PASSWORD>PGWm6VsHcw</PASSWORD>
   <REFERENCE1>qwertyui</REFERENCE1>
   </COMMAND>
   ''';
