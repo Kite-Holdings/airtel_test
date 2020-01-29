@@ -22,6 +22,8 @@ Future<http.Response> airtelCTobTransaction({
   </COMMAND>
   ''';
 
+  print(payload);
+
   final Map<String, String> headers = {
       'content-type': 'text/xml',
   };

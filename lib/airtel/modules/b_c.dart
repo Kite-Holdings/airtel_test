@@ -33,6 +33,8 @@ Future<http.Response> airtelBTocTransaction({
     ..badCertificateCallback =
         ((X509Certificate cert, String host, int port) => trustSelfSigned);
   final IOClient ioClient =  IOClient(httpClient);
+
+  print(payload);
   
 
   final http.Response res = await ioClient.post(url, headers: headers, body: payload);
